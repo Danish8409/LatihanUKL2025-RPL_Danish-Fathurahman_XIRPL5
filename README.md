@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### Penjelasan Project Presensi
 
-## Getting Started
+**Tujuan**
+Membuat aplikasi presensi berbasis web untuk siswa, dengan fitur login dan beberapa halaman utama.
 
-First, run the development server:
+**Teknologi**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* Next.js (App Router)
+* CSS biasa (tanpa Tailwind)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Halaman dan Fungsinya
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Login Page**
 
-## Learn More
+   * Halaman pertama sebelum masuk ke aplikasi.
+   * Pengguna harus mengisi username dan password.
+   * Setelah berhasil login, pengguna diarahkan ke Dashboard.
 
-To learn more about Next.js, take a look at the following resources:
+2. **Dashboard**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   * Halaman utama setelah berhasil login.
+   * Menampilkan status presensi hari ini, apakah sudah mengisi presensi atau belum.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Presensi**
 
-## Deploy on Vercel
+   * Halaman untuk mengisi data kehadiran.
+   * Tersedia pilihan: Masuk, Izin, atau Sakit.
+   * Digunakan untuk mengirim presensi harian.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Riwayat Presensi**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   * Halaman ini menampilkan daftar presensi sebelumnya.
+   * Contoh:
+
+     * 1 Jan: Masuk
+     * 2 Jan: Sakit
+     * 3 Jan: Izin
+
+5. **Profil**
+
+   * Menampilkan data pribadi seperti nama, kelas, dan nomor absen.
+
+---
+
+### Sidebar
+
+* Ada di semua halaman setelah login.
+* Terdiri dari link ke Dashboard, Presensi, Riwayat Presensi, dan Profil.
+
+---
+
+### Tampilan
+
+* Warna utama: krem
+* Warna teks: hitam
+* Font: dasar, misal Arial
+
+  ---
+
+### Screenshoot Hasil Project:
+* https://drive.google.com/drive/u/1/folders/1U8M9z3pNVyscS_OiMq-tLb_Z_kDUgG2p
